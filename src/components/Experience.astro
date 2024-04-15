@@ -1,0 +1,46 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+    {
+        date: "November 2022 - Present",
+        title: "Software Engineer II",
+        company: "ASTRO",
+        description: "As a pivotal member of ASTRO’s @discovery squad 🔎 and the innovative @buyer-tribe, I spearheaded significant contributions to API and system functionalities, enabling seamless search, browsing, and cart features across our end-to-end mobile apps. Utilizing HTTP and gRPC protocols, I established robust communication channels, achieving a 25%-50% latency improvement through efficient serialization with protobuf. Additionally, I engineered critical microservices like @syncromesh to manage Elasticsearch operations swiftly, integrating event-driven mechanisms for system-wide updates and implementing scalable monitoring of database transactions with @debezium. Furthermore, I optimized the @bulk-upload data experience, enabling real-time updates and a 50% reduction in latency, and collaborated with the data team to enhance search precision through innovative algorithms.",
+        link: "https://play.google.com/store/apps/details?id=com.astro.shop&hl=en&gl=US&pli=1",
+    },
+    {
+        date: "June 2022 - November 2022",
+        title: "Software Engineer I",
+        company: "Tanihub",
+        description: "Involved in the @warehouse-management-system (WMS) team, I spearheaded transformative improvements in warehouse operations, from streamlined putaway processes to swift goods delivery. Leading the charge, I developed the @vendor-return feature, optimizing return procedures for goods with inaccuracies, damages, or pricing discrepancies. Additionally, I drove innovation with the @pick-pack-using-bin feature, granting our supply-chain team the flexibility to choose alternate bins for picking, thus boosting operational agility. Overseeing the @free-goods aspect, I devised a solution to identify and flag small quantities of overlooked free items, safeguarding against potential financial losses. Collaborating seamlessly with the Data Team on the @market-research initiative, I delivered an API for visualizing and analyzing market research data, furnishing invaluable insights for strategic planning and informed decision-making.",
+    },
+    {
+        date: "December 2021 - June 2022",
+        title: "Software Engineer Intern",
+        company: "Mekari",
+        description: "In the dynamic @talenta-connect team (Taco), I played a vital role in enhancing the talenta-core product and its APIs, focusing on seamless integration with internal products and third-party services. Additionally, I spearheaded the development of @talenta-lite services, aimed at empowering middle to lower-tier MSMEs. Notably, I significantly boosted unit test coverage in the talenta-core-api repository, elevating it from 40% to over 90%. Moreover, I continuously fine-tuned existing features and effectively addressed bugs within the talenta ecosystem.",
+    },
+    {
+        date: "July 2021 - December 2021",
+        title: "Fullstack Engineer Intern",
+        company: "Fabelio",
+        description: "Responsible for spearheading the development of @fabelio-marvel, a dynamic middleware facilitating seamless integration between product management and administrative tasks like stock monitoring, invoicing, and delivery. Additionally, led the charge in crafting @fabelio-morbius, a robust service streamlining all shipping operations and orchestrating the shipping matrix, dictating precise shipping activities, costs, and timelines. Continuously tasked with refining microservices and APIs, ensuring optimal functionality and swiftly resolving any encountered bugs.",
+    },
+    {
+        date: "September 2020 - February 2021",
+        title: "Data Analyst Intern",
+        company: "Adira Multifinance",
+        description: "In my role, I meticulously analyze customer data across their journey, extracting valuable insights to drive strategic decisions. I spearhead the migration of traditional CRM modules to a unified platform for enhanced efficiency. By delving into target markets and leveraging past data, I offer informed advice. I also compile comprehensive sales, revenue, and expense reports, delivering realistic forecasts to our management team. Continuously, I focus on enhancing data quality and swiftly resolving any arising issues, ensuring accuracy and reliability throughout our operations.",
+    },
+]
+---
+
+<ol class="relative mt-16">
+    {
+        EXPERIENCIE.map((experiencie) => (
+                <li class="">
+                    <ExperienceItem {...experiencie} />
+                </li>
+        ))
+    }
+</ol>

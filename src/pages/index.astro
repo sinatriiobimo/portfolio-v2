@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+import AboutMe from "../components/AboutMe.astro"
+import Briefcase from "../icons/WorkExperience.astro"
+import CodeIcon from "../icons/Code.astro"
+import Experience from "../components/Experience.astro"
+import ProfileCheck from "../icons/ProfileCheck.astro"
+import Projects from "../components/Projects.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import Hero from "../components/Hero.astro"
+---
+
+<Layout
+	title="Sinatrio Bimo [Software Engineer]"
+	description="Hire bimo to create your software. Backend Engineer and Content Writer. Backend Engineer with specialized in creating robust systems and APIs">
+	<main class="px-4">
+		<SectionContainer class="py-16 md:py-36">
+			<Hero>
+				<slot/>
+			</Hero>
+		</SectionContainer>
+		<div class="space-y-24">
+			<SectionContainer id="experiences">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+					<Briefcase class="size-8" />
+					Work Experience
+				</h2>
+				<Experience />
+			</SectionContainer>
+
+			<SectionContainer id="projects">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+					<CodeIcon class="size-7" />
+					Mini Projects
+				</h2>
+				<Projects />
+			</SectionContainer>
+
+			<SectionContainer id="about-me">
+				<h2
+					class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white">
+					<ProfileCheck class="size-8" />
+					About Me
+				</h2>
+				<AboutMe />
+			</SectionContainer>
+		</div>
+	</main>
+</Layout>

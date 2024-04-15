@@ -1,0 +1,53 @@
+---
+import MediumIcon from "../icons/Medium.astro";
+const personalImageAlt = "Miguel Ángel"
+import Badge from "../components/Badge.astro"
+import LinkedInIcon from "../icons/Linkedin.astro"
+import MailIcon from "../icons/Mail.astro"
+import SocialPill from "../components/SocialPill.astro"
+import GithubIcon from "../icons/Github.astro";
+---
+
+<div class="max-w-xl">
+    <div class="flex gap-4 mb-4">
+        <img
+                class="rounded-full shadow-lg size-16"
+                src="https://media.licdn.com/dms/image/D5603AQFf81uOy9tOuA/profile-displayphoto-shrink_800_800/0/1708409968251?e=1718841600&v=beta&t=xcEi2pXq0l5K2gbf0dZPVphWhkI_MyyIZbgx_mu3WDA"
+                alt={personalImageAlt} />
+        <a
+                href="https://www.linkedin.com/in/sinatriobimo/"
+                target="_blank"
+                rel="noopener"
+                class="flex items-center transition md:justify-center md:hover:scale-105">
+            <Badge>Available for hire</Badge>
+        </a>
+    </div>
+    <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
+        Halo, I'm Bimo
+    </h1>
+    <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-green-300 [&>strong]:text-green-500 [&>strong]:font-semibold dark:text-gray-300">
+        I am a Software Engineer expertise <strong>in Backend Engineering</strong>
+        with extensive experience in the SaaS and E-commerce industries. Proficient <strong>in Golang, Java, and Node.js</strong>, Excel in translating business requirements into robust
+        code implementations, adept at crafting both monolithic and microservice architectures using domain-driven design and clean architecture
+        principles. Experienced translating business cases into efficient code and have the ability to articulate API-contract, flowcharts,
+        database-designs, and system designs. Based <strong> in Jakarta, Indonesia 🇮🇩 </strong>
+    </p>
+    <nav class="flex flex-wrap gap-4 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/sinatriobimo/">
+            <LinkedInIcon class="size-6"/>
+            LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/sinatriiobimo">
+            <GithubIcon class="size-6"/>
+            Github
+        </SocialPill>
+        <SocialPill href="https://medium.com/@sinatriio">
+            <MediumIcon class="size-6"/>
+            Medium
+        </SocialPill>
+        <SocialPill href="mailto:sinabim.w@gmail.com">
+            <MailIcon class="size-6"/>
+            sinabim.w@gmail.com
+        </SocialPill>
+    </nav>
+</div>
